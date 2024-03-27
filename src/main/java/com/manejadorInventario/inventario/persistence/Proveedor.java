@@ -1,9 +1,26 @@
-package com.manejadorInventario.inventario.persistence.DTO;
+package com.manejadorInventario.inventario.persistence;
 
-public class ProveedorDTO {
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "proveedores")
+public class Proveedor {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "nombre_empresa")
     private String nombreEmpresa;
+
+    @Column(name = "contacto_nombre")
+    private String contactoNombre;
+
+    @Column(name = "contacto_email")
+    private String contactoEmail;
+
+    @Column(name = "contacto_telefono")
+    private String contactoTelefono;
 
     public Long getId() {
         return id;
@@ -44,10 +61,4 @@ public class ProveedorDTO {
     public void setContactoTelefono(String contactoTelefono) {
         this.contactoTelefono = contactoTelefono;
     }
-
-    private String contactoNombre;
-    private String contactoEmail;
-    private String contactoTelefono;
-
-
 }

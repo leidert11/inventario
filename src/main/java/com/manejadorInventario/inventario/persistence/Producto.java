@@ -1,13 +1,25 @@
-package com.manejadorInventario.inventario.persistence.DTO;
+package com.manejadorInventario.inventario.persistence;
 
-import java.math.BigDecimal;
+import jakarta.persistence.*;
 
-public class ProductoDTO {
+@Entity
+@Table(name = "productos")
+public class Producto {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "nombre")
     private String nombre;
+
+    @Column(name = "descripcion")
     private String descripcion;
-    private BigDecimal precio;
+
+    @Column(name = "precio")
+    private Double precio;
+
+    @Column(name = "cantidad_stock")
     private Integer cantidadStock;
 
     public Long getId() {
@@ -34,11 +46,11 @@ public class ProductoDTO {
         this.descripcion = descripcion;
     }
 
-    public BigDecimal getPrecio() {
+    public Double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(BigDecimal precio) {
+    public void setPrecio(Double precio) {
         this.precio = precio;
     }
 
