@@ -11,7 +11,7 @@ public class Pedido {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @ManyToOne
     @JoinColumn(name = "id_proveedor",referencedColumnName = "id")
@@ -30,11 +30,11 @@ public class Pedido {
     @Column(name = "estado_pedido")
     private String estadoPedido;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
