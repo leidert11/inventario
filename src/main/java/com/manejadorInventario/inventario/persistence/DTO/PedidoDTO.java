@@ -43,11 +43,11 @@ public class PedidoDTO {
         this.cantidad = cantidad;
     }
 
-    public Date getFechaPedido() {
+    public Date  getFechaPedido() {
         return fechaPedido;
     }
 
-    public void setFechaPedido(Date fechaPedido) {
+    public void setFechaPedido(Date  fechaPedido) {
         this.fechaPedido = fechaPedido;
     }
 

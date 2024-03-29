@@ -4,6 +4,10 @@ public class ProveedorDTO {
 
     private Integer id;
     private String nombreEmpresa;
+    private String contactoNombre;
+    private String contactoEmail;
+    private String contactoTelefono;
+    
 
     public Integer getId() {
         return id;
@@ -25,7 +29,7 @@ public class ProveedorDTO {
         return contactoNombre;
     }
 
-    public void setContactoNombre(String contactoNombre) {
+    public void setContactoNombre(String C) {
         this.contactoNombre = contactoNombre;
     }
 
@@ -45,9 +49,7 @@ public class ProveedorDTO {
         this.contactoTelefono = contactoTelefono;
     }
 
-    private String contactoNombre;
-    private String contactoEmail;
-    private String contactoTelefono;
+    
 
 
 }

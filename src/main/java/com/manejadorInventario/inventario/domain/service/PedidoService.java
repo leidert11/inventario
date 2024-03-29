@@ -6,19 +6,26 @@ import com.manejadorInventario.inventario.domain.exception.NullReferenceExceptio
 import com.manejadorInventario.inventario.domain.repository.PedidoRepository;
 import com.manejadorInventario.inventario.persistence.Pedido;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class PedidoService implements ServiceInterface<Pedido> {
 
     @Autowired
     private PedidoRepository pedidoRepository;
 
+    // CRUD
     @Override
     public List<Pedido> findAll() {
         return pedidoRepository.findAll();
+    }
+
+    public PedidoService(PedidoRepository pedidoRepository) {
+        this.pedidoRepository = pedidoRepository;
     }
 
     @Override
@@ -78,4 +85,17 @@ public class PedidoService implements ServiceInterface<Pedido> {
         // Guardar el pedido actualizado en la base de datos
         return pedidoRepository.save(existingPedido);
     }
+
+    // Consulta 1: Proveedores con la cantidad total de productos que han sido
+// pedidos en estado "entregado"
+    public List<Object[]> findTotalPedidosEntregadosByProveedor() {
+        return pedidoRepository.findTotalPedidosEntregadosByProveedor();
+    }
+
+    // Consulta 2: Proveedores y sus productos más caros pedidos
+    public List<Object[]> findProductosMasCarosPedidosByProveedor() {
+        return pedidoRepository.findProductosMasCarosPedidosByProveedor();
+    }
+
+
 }

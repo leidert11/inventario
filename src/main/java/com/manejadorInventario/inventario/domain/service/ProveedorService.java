@@ -6,11 +6,12 @@ import com.manejadorInventario.inventario.domain.exception.NullReferenceExceptio
 import com.manejadorInventario.inventario.domain.repository.ProveedorRepository;
 import com.manejadorInventario.inventario.persistence.Proveedor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class ProveedorService implements ServiceInterface<Proveedor> {
 
     @Autowired

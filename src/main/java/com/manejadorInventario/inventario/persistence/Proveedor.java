@@ -2,6 +2,8 @@ package com.manejadorInventario.inventario.persistence;
 
 import jakarta.persistence.*;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "proveedores")
 public class Proveedor {
@@ -21,6 +23,10 @@ public class Proveedor {
 
     @Column(name = "contacto_telefono")
     private String contactoTelefono;
+
+    @OneToMany(mappedBy = "proveedor")
+private Set<Pedido> pedidos;
+
 
     public Integer getId() {
         return id;
