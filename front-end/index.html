@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="main.js" async></script>
+  <script src="app.js" defer type="module"></script>
+  <link rel="icon" type="image/png" href="./resources/Logo.png" />
+  <title>Eden's garden</title>
+</head>
+
+<body>
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <!-- SIDEBAR -->
+  <section id="sidebar">
+    <a href="#" class="brand"><i class="bx icon"><img src="./resources/Logo.png" alt="" /></i> Eden's
+      garden</a>
+    <ul class="side-menu">
+      <li class="divider" data-text="main">Main</li>
+      <li>
+        <a href="#"><i class="bx icon"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADM0lEQVR4nO2ZS2xMURjHzwyq1dDSiDTCgnqTSkjakFhIBOnOAiG1KJsiSCMRVhqJruqx8IpELKXUIzYoiUcitZB4pkEtpIg01COI90++9Ju4qXTmnLn3To+YfzKrOd9/fmfuved7XGPyyuvfElABrAYagf3AHmAHsBAYbHwWMAioAx6QXp3AAuOjgHLgZgD2BdAC7AUa9CNX5pF+/xk4AMwzvggoDQA+BmqARD9rk0Bznyt0AhiWe/K/4Y4r0G2gxGK9bGY6sAXo1tjTuaHtH2o88AP4DlRmET8B6NHNLImH0g5kvUK0hvDYmbrFzEAJOKMQa0N4TFOPp9HSuUG0K0R1yGP7C/BrwB564IluZGpIn/fqUxodnRtAhwJMCenzSX1GREfnBnBNAbLO1MAo9fgYLZ0bhCQz0coQHlXqcS9aOjcIKQRFTSE8tqrHoWjp3CAWK8SVEB7n1WNVtHRuEEsV4kM25TlQALxTj5p4KO1ArirEtv4KxQzxCWC7elyOh9Lt+K0M4VGpHg+jpXODOKkQdSE81qlHS7R0bhBrFOKZNE9ZxDdorKg2Hkr7OumU1klSZiQdYpOB0qRVvOKltYO6o0AzHGJmaUyH8UX09uOi3Q4xTRpz2PgiYI5CSbc32rK+eqMx841PAs4qmOSWsjTrhgMXdW2b8U3AWOBVpkZLehddIxl9ovFR9E5SMm1EJiiiTuOrgPsWG0n16F3GV/Gn9Z2ZYYQk6jY+ChgjXZ5CjkuzrkQT6FfZlPFJ9Ca3u7qJCxbrW1LJEJibG8o0kkwunR3wLTD7LbeIKwtM7WVSeQyYbXIpaaCAZdIV6i0i+qkzYOtxjuaToxqb0g1gOTAkzg0UAhsD1So6xjmS7uG28JVT7GDg+RI9BzYDRVFuIKEvcOSdR0pyW2wCRkb4OyXAhsCzJnqp/UoirHkxcC5g3J6LqTmwqM+LIyl/irM1GwpcV6PXwIrIiTMz1AZuOWEpyMZkXyoDA5NjIbU/2ruUpdk1eJK+vJETpSo2SnueamWRY77CJXCX/gOXjCcC2pSp0SXolgbVG08E1KcOHJegt/irHttNFOG/CkNc3Lzy+u/0G2OFKmFs1enpAAAAAElFTkSuQmCC" /></i>
+          Customer <i class="bx bx-chevron-right icon-right"></i></a>
+        <ul class="side-dropdown">
+          <div class="customer-cont">
+            <li><a href="#" id="customer1">Spanish Customers</a></li>
+            <li>
+              <a href="#" id="customer2">Customers In Madrid With Sales Rep Code 11 Or 30</a>
+            </li>
+            <li>
+              <a href="#" id="customer3">Customer Name And Sales Rep Name</a>
+            </li>
+            <li>
+              <a href="#" id="customer4">Customers With Payments And Sales Rep Name</a>
+            </li>
+            <li>
+              <a href="#" id="customer5">Customers With out Payments And Sales Rep Name</a>
+            </li>
+            <li>
+              <a href="#" id="customer6">Customers With Payments And Sales Rep And Office City</a>
+            </li>
+            <li><a href="#" id="customer7">Customers Without Payments</a></li>
+            <li>
+              <a href="#" id="customer8">Distinct Customer Representative Office</a>
+            </li>
+            <li>
+              <a href="#" id="customer9">Customers Do Not Pay Any Orders</a>
+            </li>
+            <li>
+              <a href="#" id="customer10">Find Customers With Orders But No Payments</a>
+            </li>
+            <li>
+              <a href="#" id="customer11">Count Customers By Country</a>
+            </li>
+            <li><a href="#" id="customer12">Count Customer</a></li>
+            <li>
+              <a href="#" id="customer13">Count Customers By City Madrid</a>
+            </li>
+            <li>
+              <a href="#" id="customer14">Count Customers By City Starting With M</a>
+            </li>
+            <li>
+              <a href="#" id="customer15">Count Customers With No Sales Representative</a>
+            </li>
+            <li>
+              <a href="#" id="customer16">Find Min Max Payment Dates By Customer</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="bx icon"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADX0lEQVR4nO2ZW0gUURjHT2UUXZEi1DKhXtKSAgkCiUp6KAqjl24PZU9KVBBElGB2A4megooQe+ihoKB6yAiy6GIkVEIpXR6iTLpfMKMLVNsvPvwGD9u67pkZt4H2DwvL7vn+8/tm5pz5zjfGZJRRRmkXkA2sA44DrcAH4AdwE8gyUReQAxwBvtG3KkyUBSwDuizge0A1UA4UA1X6+2egCdgCjDFRElABxBRUbp+ZCcZk6X+2XgOlJgoC5uj9L9oLDO5n/AhgLnBJY7qBwvQRJxAwBLivQPXGQZIwcEZjr5p/KWCJgrwDRvpc3WRFE80YGMrUQA4rRE0Aj4PqsT9cOjeIFoXwPWGBRerRFC6dG8QbhRgbwKNAPTrCpXODeB5CIuPV41W4dG4QbQoxJYBHvno8C5fODaJBIdYG8FiqHlfCpXODWKUQZwN4nFSP6nDp3CA2KURLAI/36rE1XDo3iIcKUR7AY30Ubq0OhZgWwKNUPZrDpXODOK0QGwJ4bFaPhnDp/K043X42TMAardNEyweGMnWY7Qry1DFuqJ6AmNZsgwaO0n2uFDjEzNeYOyYqovfBuM8h5oTG7DJRET27RG8/PjGF8YXAT/2kfBXTImu315psuwsM1zGiQyZqoqeKlckryk0yTjoqopeR66J4klJcIfNN8ttK9MBEVfRutPqcJ8BUHfPERFXAd4UcnWTMZB3TaaIoYJ4Cfkr2cNPOSUx7YbNMlASsAD5qItJNzEkyNteqml8AZemljZOcde2AXOZvydk+BSzQcfIp0yLT60p6+i0bM7miJp2SJRPYaJ1VtHldpQ2788Av+pb8dw5YDNTGde7bpJIO0sxIJYFxQJ0+vbFujW3xB9YJvQf4ao2V77uBSQleRcjvb62xX4ADwIQwE5Au+o64BK4DK6WC7Se23opJ2hsGhgGrgWtxCe3s7zipJJGt0J4uSl3lEF9ixZY4xM0GGq3YW1I5+E1C2v931agTWOjDo8iCKfIRX6bHRrv+o4wPk6Nq8AjIczbo8ZDJ7KnWp0ce8Fg9jrkGF+rqImX2dD8A6tNuJdIewKdYeWJOPLo6iRoDHNwrDm35fjMFXFCPOpcgb25UBjhwTYJEgrxHqVSP2y5B9tvZqKnLJZFmoqsbPi9qRhn91/oDlhPZBozUTM8AAAAASUVORK5CYII=" /></i>
+          Employee <i class="bx bx-chevron-right icon-right"></i></a>
+        <ul class="side-dropdown">
+          <div class="employee-cont">
+            <li><a href="#" id="employee1">Employees By Boss Id 7</a></li>
+            <li><a href="#" id="employee2">Boss Of Company</a></li>
+            <li>
+              <a href="#" id="employee3">Employees Not Sales Representatives</a>
+            </li>
+            <li><a href="#" id="employee4">Employee And Boss Names</a></li>
+            <li>
+              <a href="#" id="employee5">All Employees With Boss And Grand Boss</a>
+            </li>
+            <li>
+              <a href="#" id="employee6">Employees Not Associated Office</a>
+            </li>
+            <li>
+              <a href="#" id="employee7">Employees Do Not Have Clients</a>
+            </li>
+            <li>
+              <a href="#" id="employee8">Non Client Office Employees Work</a>
+            </li>
+            <li>
+              <a href="#" id="employee9">Employees Not Associated Office And Not Client</a>
+            </li>
+            <li>
+              <a href="#" id="employee10">Employees Without Customers</a>
+            </li>
+            <li><a href="#" id="employee11">Count Employees</a></li>
+            <li>
+              <a href="#" id="employee12">Count Customers By Employee</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="bx icon"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABQElEQVR4nO2YMU4DMRBFjaAEkRMQQZsbpOIatBElh6DclpJTINGgECroSME5kKigiCKKh7wy0hJFycROlg+ZV2ZmbL/9cgqH4DhOMcAx8EL7PAMn65LoA6/8Hm/AaanEGTBJCw6BTsYaNRlzB8BtGp8Cg5CxyA5w2fgq18DeygsViESAXaBqnOMq/hYsAPvATRr8BC5MgxsQ+QY4T6lE7oDDsAxgjD5ji8ifIFhFgii4iBh4IisAdIGHxl/lPGJtBBxl7lGzvsb5s1HCyr2yyEca7y3o6aWed2WR0X9JpBsPaLgjQ+k70ga4iBh4ImLgiYiBJyIGnogYqCWS3s2qjFqNZQNbYwEzj3+VtSYlMnPQHwdmQU0ykWX7kFnLayzERRKeiAqoJEIGwUXwx4ftuSOti6gTDCJP6PNYHK3jbBlfF0oJJl9bKvkAAAAASUVORK5CYII=" /></i>Product<i
+            class="bx bx-chevron-right icon-right"></i></a>
+        <ul class="side-dropdown">
+          <div class="product-cont">
+            <li>
+              <a href="#" id="product1">Get Ornamental Products In Stock</a>
+            </li>
+            <li>
+              <a href="#" id="product2">Get Products Are Not In Any Order</a>
+            </li>
+            <li>
+              <a href="#" id="product3">Get Products Are Not In Any Order NDI</a>
+            </li>
+            <li><a href="#" id="product4">Find Max And Min Price</a></li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="bx icon"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA40lEQVR4nO2Y0Q6DIAxF7/+5r4bsm/Z4l70siwMUwm0s9jxJooXToo0AQRB0QfJJHRlWUIy5CJzErRIiB9y2Iix/dLJHkSKyCVVxubu/rNWokDMRTptwdGFnGzEqz19ZpJlxdyIYHHdP6E5EhaVIllmQyUzkDIqgIbJcRaj9I7Qiy79SVuB74RQuK+IdiBugFem/RJbbQRGDIdLP8hUh+SD52u3/z3jzJrJNE7FEkQwsJwIDlhOZAUJkAtVsdnCpikhiMET6qSWN0dl/iK01QLzsd+vsuXXIPFlk1jlBslhvgAHe0okzxEYuE04AAAAASUVORK5CYII=" /></i>Office<i
+            class="bx bx-chevron-right icon-right"></i></a>
+        <ul class="side-dropdown">
+          <div class="office-cont">
+            <li><a href="#" id="office1">Get Office Code And City</a></li>
+            <li><a href="#" id="office2">Get City And Phone In Spain</a></li>
+            <li>
+              <a href="#" id="office3">Get Customers With Payments And Their Sales Reps And Office
+                City</a>
+            </li>
+            <li>
+              <a href="#" id="office4">Get Office Addresses In Fuenlabrada</a>
+            </li>
+            <li>
+              <a href="#" id="office5">Get Offices Not Employees Have Client With Gama Frutales</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="bx icon"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAo0lEQVR4nO3SMQ6EMAxE0bn/pf82plmhFIaQgcxrQyR/HCleAlPaPkQmuLoRmSAhRSbozpOQSchGyujvzKKnNvKZkBVISJEJuvMkZBKykSITdOdJyCRkI0Um6M6zRQh/RmcdSsiuT2sFElJkgu48o4vH2dk33EAJ2fVprUBCikzQnWd08Tg7+4YbKCG7Pq0VSEiRCbrzJGQSshFT6q7SjULv8AOerbCyY2D5PAAAAABJRU5ErkJggg==" /></i>Order<i
+            class="bx bx-chevron-right icon-right"></i></a>
+        <ul class="side-dropdown">
+          <div class="order-cont">
+            <li><a href="#" id="order1">Get Distinct Order Status</a></li>
+            <li><a href="#" id="order2">Get Delayed Orders</a></li>
+            <li>
+              <a href="#" id="order3">Find Orders With Late Delivery</a>
+            </li>
+            <li><a href="#" id="order4">Find Rejected Orders In 2009</a></li>
+            <li>
+              <a href="#" id="order5">Find Orders Delivered In January</a>
+            </li>
+            <li><a href="#" id="order6">Count Order By Status</a></li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="bx icon"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4klEQVR4nO3aPWsUQRzH8RWNaGUh+ALEQlALbdTExjqVEcFKRBALsbHxDahRRPCh8SUYsBSsTKHJSxAFK+FOG0WE4AOKH9njfzAesm4uy90s2W81MP/5zXyZndnj7oqio6NjXWA7buO9/OhjsVxjHZFb8udmHZHSuuR4kRmYjbX16xQPiPYqXla1J41kfbULy8XiRVW7FSI5Yr0iuVNsOpEiU3QimaHbkcwwrR2ZWp5O5G+wgKXk6r+Po0VbdgS78KziXXYPW9og8jQi3uE89uMgLuJD9F3KWgRHYvivUuAf/QfwDR+xM2eRKzF8paJmeG5O5yxy7X8iG8WERE4lj9bcOBm5iOzA24goz8IjHMPWcfKmfWvtxfLIlfsZT3ChlB03e6IiSc4J3MUr/E6kejjbGpEU7MHlkBJi80XbREa+xXweU6wWGR/2q3EFz1TUzMcUazmLvI7hhytqTkbNp5xFHsTwpYqa61GznLPIPnyNiIfYnfRtw7mkfyHrw44z+BExP/Embqu15Aq+s4H8Ac0VVmccwmN8Gebhe7wox7p2pyIy8jgNmWkoc0BzhU1P3HSehiduGp1IZtiMO9KP2tkiMzAXa+vVKS5/x86dG3U/ai8mO5MTvVKi1h8GOjo6ipQ/8BFQfs2w+z4AAAAASUVORK5CYII=" /></i>Payment<i
+            class="bx bx-chevron-right icon-right"></i></a>
+        <ul class="side-dropdown">
+          <div class="payment-cont">
+            <li>
+              <a href="#" id="payment1">Get Customer Codes With Payments In 2008</a>
+            </li>
+            <li>
+              <a href="#" id="payment2">Get Paypal Payments In 2008 Order By Total Desc</a>
+            </li>
+            <li>
+              <a href="#" id="payment3">Get Distinct Payment Methods</a>
+            </li>
+            <li>
+              <a href="#" id="payment4">Find Average Payment Total ForYear2009</a>
+            </li>
+            <li><a href="#" id="payment5">Get Total Payments By Year</a></li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="bx icon"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdklEQVR4nO3TQQrDMBDFUN3/0s4FSksIxfJEb20YPsKQQywpGiJDRWSoiAwVmVyEP1sN+WBJcdeSoiEyVESGishQERkqMrkIX97ePvTw9k+vGLITDZGhIpM/O1OG7ERDZKjI5M/OlCE70RAZKiJDRWSoiAzhDBfEW4DRmg/GugAAAABJRU5ErkJggg==" /></i>Order
+          Detail<i class="bx bx-chevron-right icon-right"></i></a>
+        <ul class="side-dropdown">
+          <div class="orderDetail-cont">
+            <li>
+              <a href="#" id="orderDetail1">Count Distinct Products By Order</a>
+            </li>
+            <li><a href="#" id="orderDetail2">Sum Quantity By Order</a></li>
+            <li>
+              <a href="#" id="orderDetail3">Find Top 20 Products By Total Sold</a>
+            </li>
+            <li>
+              <a href="#" id="orderDetail4">Calculate Invoice Totals</a>
+            </li>
+            <li>
+              <a href="#" id="orderDetail5">Calculate Product Invoice Totals</a>
+            </li>
+            <li>
+              <a href="#" id="orderDetail6">Calculate Total By Product Starting With OR</a>
+            </li>
+            <li>
+              <a href="#" id="orderDetail7">Calculate Total By Product</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="bx icon"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACkUlEQVR4nO2aTYhOURiAX8rfYoakEM1kYycpKVHCRlKklI0NJREbkyGU0kg2io2I5VCzMDbUSE2ymg2lMTKiNGIoYvxk/Dw6OVN3buc9547m8p6ap77V+Xnf5373veec+30iE2QOMAXYDXQDr4AfwADQDqwY41yH/HiN7rokFgA9kcA/geMV55rkL0CMvjokpickihyoMN/yCvPsqkOkhep8ARYm5juZmOMFMLWOuhhkbFxIzPkgMX7/uEr4oGsZO1+BWcp8zYmxr4EZdYic4u8I3uPuaifGtY67hA98oxToGbAamAmcjiR0S5nvdmTMO6ChLpG+UrCVpfZrSlKfygXr5YcjIidqkfDB3xQCPQm0zwWGlMTWlPpuj0h8BGbXKfK5EOyK0uesktzRUj+3A9A4U5uED+6eQCMcVvo0+ZW9TEfpMf4+svbMq1tkoy/qVnePR/rdCSTYX2hfH/k2zosVgJ2BBH8Bjb79nCLhir9ZrOAWQOB7INFVvv25InJZrAHcDSS6D1iqSLht/GKxBnAkkOxFt71XRNrFIsCyQLI9yhHA1c8SsQgwOfCI/eaTLtMplgFuUo1RWx1zROqhSJdYB1hXQWTUHswkQINSEyPck1wA+iMiGyQXgA5F4r57FSS5ABxTRLZKTgCbAhKP3DojOQFsCYgclJwAprkjcUDkkuQEsFepj8eSC/w5zmrnDsd8yQFgB3G2SQ4AXQmRNrEOMEc56uazdXf4X7JS9Ip1iL98G2FQrAP0VhAZFuugv0UsMiTWIV3ojpdiHfQ38kUeinWApxVErop1gM4KIi1iHWBPQsKd4xeJdYBG4G1E5LrkArBZ+X/JQOpPBObwv/i6zeMH/3ErftP/zmsC+Yf8Blfj/wwWoIEWAAAAAElFTkSuQmCC" /></i>Gama
+          Product<i class="bx bx-chevron-right icon-right"></i></a>
+        <ul class="side-dropdown">
+          <div class="gamaProduct-cont">
+            <li><a href="#" id="gamaProduct1">Get All Gama Product</a></li>
+          </div>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <!-- SIDEBAR -->
+
+  <!-- NAVBAR -->
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <i class="bx toggle-sidebar"><img width="20px"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAY0lEQVR4nO3YUQ3AMAgFQGziZhZQ1DprZbCxu4R/SEPySgQAHSrXM6Gicp8JFd0NGCTnvsiasewAQIjxpztb1eDQuNubMEiK8QAwVL3guOYan9Lvbo/r9YP/yGpfVNd4gPiqCyoexJ1u76NsAAAAAElFTkSuQmCC" /></i>
+      <form action="#"></form>
+
+      <span class="divider"></span>
+      <div class="profile">
+        <img src="https://th.bing.com/th/id/R.1214cc6c68987d8cd09d62e08d96a824?rik=yGEmp8nggfzBaQ&pid=ImgRaw&r=0"
+          alt="" />
+        <ul class="profile-link">
+          <li>
+            <a id="buttonClearToken" href="#"><i class="bx bxs-log-out-circle"></i> Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- MAIN -->
+    <div class="background"></div>
+    <main>
+
+      <h1>welcome</h1>
+      <ul class="breadcrumbs">
+        <li><a href="./index.html">Home</a></li>
+        <li class="divider">/</li>
+        <li><a href="#" class="active" id="point">welcome</a></li>
+      </ul>
+      <br />
+      <br />
+      <h3 id="statement"></h3>
+
+      <div class="info-data">
+        <div class="card">
+          <div class="head">
+            <div class="content-api">
+              <p>welcome</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <!-- MAIN -->
+  </section>
+  <!-- NAVBAR -->
+</body>
+
+</html>

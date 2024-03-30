@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./css/aut.css">
+    <link rel="icon" type="image/png" href="./resources/Logo.png">
+    <script src="./js/auth_sign_in.js" type="module" defer></script>
+</head>
+<body>
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    <div id="formUserToken" class="login-container">
+        <form action="" class="form-login">
+            <ul class="login-nav">
+                <li class="login-nav__item">
+                    <a href="./login.html">Sign In</a>
+                </li>
+                <li class="login-nav__item active">
+                    <a href="#">Sign Up</a>
+                </li>
+            </ul>
+            <label for="adminUser" class="login__label">
+                UserName
+            </label>
+            <input id="adminUser" class="login__input" type="text" required placeholder="UserName" />
+            <label for="passwordUser" class="login__label">
+                Password
+            </label>
+            <input id="passwordUser" class="login__input" type="password" required placeholder="password" />
+            <div class="btn">
+                <input id="btnRegister" type="submit" value="Sign In" class="login__submit">
+            </div>
+        </form>
+        <div class="direct-sign-in">
+            <button id="login-btn">Login</button>
+        </div>
+    </div>
+    
+</body>
+</html>
