@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Field;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -76,5 +77,17 @@ public class ProductoService implements ServiceInterface<Producto> {
             }
         }
         return productoRepository.save(existingProducto);
+    }
+
+    public List<Object[]> precioPromedioProductosNoPedidosUltimos30Dias() {
+        return productoRepository.findTotalPedidosEntregadosByProveedor();
+    }
+
+    public List<String> productosNoPedidosUltimoTrimestre() {
+        return productoRepository.findProductosMasCarosPedidosByProveedor();
+    }
+
+    public List<Object[]> productosPrecioSuperiorPromedio() {
+        return productoRepository.findProductosPrecioSuperiorPromedio();
     }
 }

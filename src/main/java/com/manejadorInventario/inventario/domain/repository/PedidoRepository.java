@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -27,7 +26,5 @@ public interface PedidoRepository extends JpaRepository<Pedido, Integer> {
             "INNER JOIN pr.pedidos pe " +
             "GROUP BY pr.nombreEmpresa, pe.producto.nombre")
     List<Object[]> findProductosMasCarosPedidosByProveedor();
-
-    // Consulta 3: Productos pedidos en el mes pasado
 
 }
