@@ -7,7 +7,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.Key;
 
 public class Constans {
-    
+
     // Spring Security
     public static final String LOGIN_URL = "/login";
     public static final String REGISTER_URL = "/register";
@@ -27,4 +27,5 @@ public class Constans {
         byte[] keyBytes = secret.getBytes(StandardCharsets.UTF_8);
         return Keys.hmacShaKeyFor(keyBytes);
     }
+
 }

@@ -29,8 +29,8 @@ public class AdminInterfaceImpl implements AdminInterface<Admin> {
     @Override
     public ResponseEntity<Admin> getById(Object id) {
         try{
-            long newId = Long.parseLong(id.toString());
-            Admin optionalAdmin = adminRepository.findById(Math.toIntExact(newId))
+            Long  newId = Long.parseLong(id.toString());
+            Admin optionalAdmin = adminRepository.findById(newId)
                     .orElseThrow(() -> new AdminNotFoundException("Admin no encontrado"));
             return ResponseEntity.ok(optionalAdmin);
 
@@ -47,8 +47,8 @@ public class AdminInterfaceImpl implements AdminInterface<Admin> {
 
     @Override
     public ResponseEntity<Void> delete(Long id) {
-        if (adminRepository.existsById(Math.toIntExact(id))) {
-            adminRepository.deleteById(Math.toIntExact(id));
+        if (adminRepository.existsById(id)) {
+            adminRepository.deleteById(id);
             return ResponseEntity.noContent().build();
         } else {
             return ResponseEntity.notFound().build();
@@ -58,8 +58,8 @@ public class AdminInterfaceImpl implements AdminInterface<Admin> {
     @Override
     public ResponseEntity<Admin> update(Object id, Admin adminUpdate) {
         try{
-            long newId = Long.parseLong(id.toString());
-            Optional<Admin> optionalAdmin = adminRepository.findById(Math.toIntExact(newId));
+            Long newId = Long.parseLong(id.toString());
+            Optional<Admin> optionalAdmin = adminRepository.findById(newId);
             if(optionalAdmin.isPresent()){
 
                 Admin adminSend = optionalAdmin.get();

@@ -12,7 +12,6 @@ import java.util.stream.Collectors;
 
 import static com.manejadorInventario.inventario.domain.security.Constans.*;
 
-
 @Configuration
 public class JWTAuthtenticationConfig {
 

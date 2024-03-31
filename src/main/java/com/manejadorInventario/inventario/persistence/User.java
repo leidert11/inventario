@@ -3,6 +3,7 @@ package com.manejadorInventario.inventario.persistence;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class User {
+
     @JsonIgnore
     private String user;
     @JsonIgnore
@@ -42,4 +43,3 @@ public class User {
         this.token = token;
     }
 }
-
